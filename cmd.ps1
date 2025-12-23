@@ -41,13 +41,20 @@ $files = @{}
 $perms = @{}
 
 function Show-Neofetch {
-    Write-Host "        /\        " -ForegroundColor $BLUE
-    Write-Host "       /  \       $user@$hostn" -ForegroundColor $BLUE
-    Write-Host "      /\   \      ------------" -ForegroundColor $BLUE
-    Write-Host "     /  \___\     OS: CachyOS x86_64" -ForegroundColor $BLUE
-    Write-Host "    /   /         Kernel: Linux $kernel" -ForegroundColor $BLUE
-    Write-Host "   /___/          Shell: bash" -ForegroundColor $BLUE
-    Write-Host ""
+Write-Host "      ██████╗ █████╗  ██████╗██╗  ██╗██╗   ██╗ ██████╗ ███████╗" -ForegroundColor Cyan
+Write-Host "     ██╔════╝██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝██╔═══██╗██╔════╝" -ForegroundColor Cyan
+Write-Host "     ██║     ███████║██║     ███████║ ╚████╔╝ ██║   ██║███████╗" -ForegroundColor Cyan
+Write-Host "     ██║     ██╔══██║██║     ██╔══██║  ╚██╔╝  ██║   ██║╚════██║" -ForegroundColor Cyan
+Write-Host "     ╚██████╗██║  ██║╚██████╗██║  ██║   ██║   ╚██████╔╝███████║" -ForegroundColor Cyan
+Write-Host "      ╚═════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "$user@$hostn" -ForegroundColor Green
+Write-Host "OS: CachyOS x86_64"
+Write-Host "Kernel: Linux $kernel"
+Write-Host "Shell: bash"
+Write-Host "Terminal: Konsole"
+Write-Host "Theme: Breeze Dark"
+Write-Host ""
 }
 
 function Show-Htop {
