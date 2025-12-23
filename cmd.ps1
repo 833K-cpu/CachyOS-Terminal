@@ -181,7 +181,8 @@ Write-Host "   Main PID: 1 (systemd)"
         "" {}
 
         default {
-            Write-Host "bash: $cmd: command not found" -ForegroundColor $RED
+            Write-Host ("bash: {0}: command not found" -f $cmd) -ForegroundColor $RED
+
         }
     }
 }
